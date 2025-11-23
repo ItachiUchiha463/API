@@ -91,11 +91,8 @@ builder.Services.AddScoped<IGameSessionsService, GameSessionsService>();
 builder.Services.AddAutoMapper(typeof(UserProfile), typeof(BoardGameProfile), typeof(GameSessionProfile));
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 
 app.UseAuthentication();
