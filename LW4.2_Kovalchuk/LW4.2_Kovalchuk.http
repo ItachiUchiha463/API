@@ -1,0 +1,6 @@
+@LW4._2_Kovalchuk_HostAddress = http://localhost:5226
+
+GET {{LW4._2_Kovalchuk_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
